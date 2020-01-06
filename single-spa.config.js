@@ -1,6 +1,12 @@
 import { registerApplication, start } from "single-spa";
 
 registerApplication(
+  "vanilla",
+  () => import("./src/vanilla/vanilla.app"),
+  pathPrefix("/vanilla")
+);
+
+registerApplication(
   "navBar",
   () => import("./src/navBar/navBar.app.js").then(mod => mod.navBar),
   () => true

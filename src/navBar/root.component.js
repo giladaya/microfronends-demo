@@ -30,6 +30,11 @@ const NavBar = () => {
             </a>
           </li>
           <li>
+            <a href="/vanilla" onClick={navigateToUrl}>
+              Vanilla
+            </a>
+          </li>
+          <li>
             <a href="/react" onClick={navigateToUrl}>
               React
             </a>
